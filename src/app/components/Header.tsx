@@ -6,7 +6,7 @@ const Header = () => {
     <header className="flex container justify-between items-center p-10 bg-white ml-40 shadow-md">
       {/* Liens à gauche */}
       <div className="flex space-y-2 ml-10 space-x-4 ">
-        <Link href="/Blog" className="text-gray-700 hover:text-blue-500">
+        <Link href="/Blog/" className="text-gray-700 hover:text-blue-500">
           Blog
         </Link>
         <Link href="/About" className="text-gray-700 hover:text-blue-500">
