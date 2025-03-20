@@ -14,9 +14,9 @@ import Newsletter from './components/Newsletter';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-white">
       <Header />
-      <main className="flex-grow flex flex-col bg-gray-100">
+      <main className="flex-grow flex flex-col bg-white">
         <ImageGrid />
        
       </main>

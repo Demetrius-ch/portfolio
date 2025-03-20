@@ -3,9 +3,9 @@ import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center p-6 bg-white shadow-md">
+    <header className="flex container justify-between items-center p-10 bg-white ml-40 shadow-md">
       {/* Liens à gauche */}
-      <div className="flex space-y-2 ml-2 space-x-4">
+      <div className="flex space-y-2 ml-10 space-x-4 ">
         <Link href="/Blog" className="text-gray-700 hover:text-blue-500">
           Blog
         </Link>
@@ -18,10 +18,10 @@ const Header = () => {
       </div>
 
       {/* Texte au centre */}
-      <div className="text-2xl font-bold text-gray-800">Fillmore</div>
+      <div className="text-2xl font-bold text-gray-800 ml-10">Fillmore</div>
 
       {/* Icônes à droite */}
-      <div className="flex space-x-4">
+      <div className="flex space-x-4 ml-10">
         <a href="https://twitter.com" className="text-gray-700 hover:text-blue-500">
           <FaTwitter size={24} />
         </a>
