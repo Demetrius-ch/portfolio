@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const images = [
+export const images = [
   {
     src: "/img/03_20160720S1_WEATHERBY_ANGLERS_160.jpg",
     alt: "Image 1",
@@ -9,8 +9,6 @@ const images = [
     description: "Casting for Redfin",
     fullText:
       "When I asked today’s guests what they were looking to catch, they had an immediate answer: Redfin.",
-    width: 800,
-    height: 800,
   },
   {
     src: "/img/07_20160720S1_WEATHERBY_ANGLERS_048.jpg",
@@ -19,8 +17,6 @@ const images = [
     description: "Fishing the Space Coast",
     fullText:
       "Today, we dropped anchor off Cocoa Beach to enjoy some great fishing and a history lesson about Florida’s incredible Space Coescription for image 2.",
-    width: 800,
-    height: 800,
   },
   {
     src: "/img/02_20160720S1_WEATHERBY_ANGLERS_052.jpg",
@@ -29,8 +25,6 @@ const images = [
     description: "The Captain's Hat ",
     fullText:
       "Being the captain of a fishing charter is my dream job, but that doesn’t mean it’s always easy.",
-    width: 800,
-    height: 800,
   },
   {
     src: "/img/04_20160720S1_WEATHERBY_ANGLERS_264.jpg",
@@ -39,8 +33,6 @@ const images = [
     description: "The Art of Lures",
     fullText:
       "I’ve never been much of a fly fisherman, but that doesn’t mean I can’t appreciate the work of art that is a well tied lure.",
-    width: 800,
-    height: 800,
   },
   {
     src: "/img/08_20160720S1_WEATHERBY_ANGLERS_256.jpg",
@@ -49,8 +41,6 @@ const images = [
     description: "",
     fullText:
       "I’ve never been much of a fly fisherman, but that doesn’t mean I can’t appreciate the work of art that is a well tied lure. ",
-    width: 800,
-    height: 800,
   },
   {
     src: "/img/04_20160720S1_WEATHERBY_ANGLERS_287.jpg",
@@ -59,8 +49,6 @@ const images = [
     description: "Big Snook Fishing",
     fullText:
       "Snook is always a fun fish to go after and we spent the day visiting a few of the locations it likes best.",
-    width: 800,
-    height: 800,
   },
   {
     src: "/img/06_20160720S1_WEATHERBY_ANGLERS_224.jpg",
@@ -69,8 +57,6 @@ const images = [
     description: "Trophies ",
     fullText:
       "What do you do with a big catch? Mount it? Eat it? Take a photo and throw it back? It all depends, I think, on why you fish in the first place.",
-    width: 800,
-    height: 800,
   },
   {
     src: "/img/08_20160720S1_WEATHERBY_ANGLERS_233.jpg",
@@ -79,8 +65,6 @@ const images = [
     description: "The Luckiest Man Alive ",
     fullText:
       "I always say that every day spent on the water is the best day of my life. Here’s why I do what I do.",
-    width: 800,
-    height: 800,
   },
   {
     src: "/img/09_20160720S1_WEATHERBY_ANGLERS_203.jpg",
@@ -89,8 +73,6 @@ const images = [
     description: "Sailing Out ",
     fullText:
       "Today, I found myself in a strange position: as a passenger on someone else’s boat.",
-    width: 800,
-    height: 80,
   },
   {
     src: "/img/03_20160720S1_WEATHERBY_ANGLERS_185.jpg",
@@ -99,8 +81,6 @@ const images = [
     description: "Thinking Like a Fish ",
     fullText:
       "To get better at catching fish, you need to get better at thinking like one",
-    width: 800,
-    height: 800,
   },
   {
     src: "/img/01_20160720S1_WEATHERBY_ANGLERS_113.jpg",
@@ -109,19 +89,14 @@ const images = [
     description: "Casting at Sunset ",
     fullText:
       "After a few days of challenging weather, there’s nothing better than a beautiful sunset fishing expedition.",
-    width: 800,
-    height: 800,
   },
   {
     src: "/img/04_20160720S1_WEATHERBY_ANGLERS_039.jpg",
     alt: "Image 11",
     title: "5/20/19",
-    description: 
-    "Every Catch Is a Good Catch ",
+    description: "Every Catch Is a Good Catch ",
     fullText:
       "Landing a big one will always have its place, but a true fisherman or fisherwoman loves the joy of the chase more than the size of the catch.",
-    width: 800,
-    height: 800,
   },
 ];
 
@@ -137,22 +112,24 @@ const ImageGrid = () => {
             <Image
               src={image.src}
               alt={image.alt}
-              width={image.width}
-              height={image.height}
+              width={400}
+              height={400}
               objectFit="cover"
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto rounded-lg text-2xl"
             />
-            <div className="mt-4">
-              <h2 className="text-xl text-black text-center mb-2">
+            <div className="mt-4 text-center">
+              <h2 className="text-sm text-black text-center mb-2">
                 {image.title}
               </h2>
-              <p className="text-black font-bold text-center">
+              <p className="text-black font-bold text-center text-xl">
                 {image.description}
               </p>
-              <p className="text-black text-center">{image.fullText}</p>
+              <p className="text-black text-center">
+                {image.fullText.substring(0, 100)}
+              </p>
               <Link
                 href={`/blog/${index}`}
-                className=" mt-2 inline-block text-center text-blue-500 hover:underline"
+                className=" mt-2 inline-block text-2xl text-amber-950 underline"
               >
                 Read more
               </Link>

@@ -8,9 +8,10 @@
   );
 }*/
 
-import Header from '../app/components/Header';
-import ImageGrid from './components/ImageGrid';
-import Newsletter from './components/Newsletter';
+import Header from "../app/components/Header";
+import ImageGrid from "./components/ImageGrid";
+import Footer from "../app/components/Footer";
+
 
 export default function Home() {
   return (
@@ -18,10 +19,9 @@ export default function Home() {
       <Header />
       <main className="flex-grow flex flex-col bg-white">
         <ImageGrid />
-       
       </main>
-      <Newsletter />
-   
+      <Footer/>
+      
     </div>
   );
 }
