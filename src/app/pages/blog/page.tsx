@@ -15,18 +15,20 @@ export default function Blog() {
         <div className="flex items-center space-x-4">
           <input
             type="text"
-            placeholder="Vous n'avez pas de compte ?"
+            placeholder="Vous n&#39;avez pas de compte ?"
             className="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600"
           />
           <button className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
-            S'inscrire
+            S&#39;inscrire
           </button>
         </div>
       </header>
 
       {/* Formulaire principal */}
       <div className="bg-white rounded-lg shadow-xl p-8 max-w-md w-full mx-auto">
-        <h2 className="text-3xl text-blue-700 font-bold text-center mb-6">Bienvenue !</h2>
+        <h2 className="text-3xl text-blue-700 font-bold text-center mb-6">
+          Bienvenue !
+        </h2>
 
         {/* Bouton Google */}
         <button className="w-full bg-white border border-gray-300 rounded-lg py-2 px-4 flex items-center justify-center mb-6 hover:bg-gray-50 transition-colors">
@@ -90,7 +92,7 @@ export default function Blog() {
               href="#"
               className="text-sm text-purple-600 hover:underline float-right mt-1"
             >
-              Mot de passe oublié ?
+              Mot de passe oubli&#233; ?
             </a>
           </div>
 
@@ -106,14 +108,14 @@ export default function Blog() {
       {/* Pied de page */}
       <footer className="mt-8 text-center text-white">
         <p className="mb-4">
-          Vous n'avez pas de compte ?{" "}
+          Vous n&#39;avez pas de compte ?{" "}
           <a href="#" className="font-medium hover:underline">
-            S'inscrire
+            S&#39;inscrire
           </a>
         </p>
         <p className="text-xs">
           Ce site est protégé par Chandler et la politique de confidentialité et
-          les conditions d'utilisation de Google s'appliquent.
+          les conditions d&#39;utilisation de Google s&#39;appliquent.
         </p>
       </footer>
     </div>
